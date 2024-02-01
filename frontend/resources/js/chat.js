@@ -17,7 +17,7 @@ function sendMessage(){
     createUserMessageP(message);
     document.getElementById("message").value = "";
     let token = localStorage.getItem("token");
-    let url = "https://localhost:3000/chat";
+    let url = "https://smart-talk.onrender.com";
     let fetchOptions = {
         method: 'POST',
         headers: {
