@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMART LIFE AI</title>
+    <link rel="stylesheet" href="resources/css/Styles.css">
+    <style>
+        body {
+            background-color: rgb(31, 31, 31);
+            background-image: url(resources/img/bp.jpg);
+            background-size: stretch;
+            background-repeat: no-repeat;
+            margin-bottom: 7em;
+        }
+
+        header {
+            color: antiquewhite;
+            text-align: center;
+            padding: 20px;
+        }
+
+       
+    </style>
+</head>
+
+    <header>
+        <div class="image-container"> <img src="resources/img/lg.PNG" alt="Smart Life Logo" width="50" height="50"></div>
+    </header>
+<body>
+    <div>
+      <div id="chatDiv" >
+        <div class="AI-cont">Hello there, how can I help you?</div>
+      </div>
+      <div class="textarea-container">
+        <textarea id="message" class="Textarea" autofocus></textarea>
+        <button class="send-button" onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="resources/js/chat.js"></script>
+</body>
+</html>
