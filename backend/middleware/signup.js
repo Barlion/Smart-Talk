@@ -6,7 +6,7 @@ const signup = async (req, res, next) => {
     try {
         const dbUser = await User.findOne({ $or: [{ username: req.body.username }, { email: req.body.email }] }).exec();
         if (dbUser) {
-            res.status(400).send("User already exists");
+            res.status(400).send("User already exist");
             return;
         }
         const user = new User(req.body);
